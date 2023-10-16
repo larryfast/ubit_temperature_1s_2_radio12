@@ -5,5 +5,12 @@ basic.forever(function () {
     radio.sendValue(control.deviceName(), temperature)
     serial.writeValue(control.deviceName(), temperature)
     basic.showString("" + (temperature))
+    basic.showLeds(`
+        # . # # .
+        # . . . #
+        # . . # .
+        # . # . .
+        # . # # #
+        `)
     basic.pause(1000)
 })
